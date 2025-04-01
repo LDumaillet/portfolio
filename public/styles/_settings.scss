@@ -1,0 +1,33 @@
+$primarycolor: #3500d3;
+
+$secondarycolor: #240090;
+
+$thirdcolor: #190061;
+
+$fourthcolor: #0c0032;
+
+$fifthcolor: #282828;
+
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+html {
+  background: black;
+}
+
+.flux {
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
