@@ -9,9 +9,8 @@ html {
   background: black;
 }
 
-.flux {
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
+.flux-right {
+  margin-right: 5vw;
 }
 
 a {
@@ -20,6 +19,30 @@ a {
 
 li {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: white;
+}
+
+h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  background: #282828;
+  border-radius: 20px;
+  width: 30vw;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10vh;
+  box-shadow: 7px 7px 5px #190061;
 }
 
 .navbar ul {
@@ -34,6 +57,7 @@ li {
   margin: 2.5vh 5vw;
   border-radius: 50px;
   background-color: #282828;
+  box-shadow: 10px 5px 5px #190061;
 }
 .navbar ul li {
   display: flex;
@@ -41,10 +65,19 @@ li {
   align-items: center;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  width: 6.5vw;
+  width: 7.5vw;
   cursor: pointer;
-  font-size: 1.6rem;
-  color: white;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+.navbar ul li:hover {
+  color: #3500d3;
+  border: 2px solid white;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 4vw;
+  height: 22vh;
 }
 
 section {
@@ -61,21 +94,160 @@ section .welcome .presentation {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(/public/pictures/LooperGroup.svg) no-repeat;
-  background-size: contain;
-  background-position: center;
+  position: relative;
   height: 100%;
+  overflow: hidden;
 }
 section .welcome .presentation h1 {
-  font-size: 8rem;
-  background-image: linear-gradient(180deg, #282828, #240090);
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  font-size: 9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px rgb(53, 0, 211);
 }
 section .welcome .presentation h3 {
   font-size: 5rem;
-  color: white;
+  text-shadow: 3px 3px rgb(53, 0, 211);
+}
+section .welcome .presentation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/public/pictures/background.svg) no-repeat center;
+  background-size: contain;
+  animation: rotateBackground 15s linear infinite;
+  z-index: -1;
+}
+@keyframes rotateBackground {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+section .about {
+  margin-top: 20vh;
+}
+section .about h6 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+section .about p {
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 3rem;
+}
+section .course {
+  margin-top: 10vh;
+}
+section .course div {
+  font-size: 2rem;
+}
+section .course .timeline {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+}
+section .course .timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #3500d3;
+  transform: translateX(-50%);
+  border-radius: 50px;
+}
+section .course .timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+section .course .left {
+  left: 0;
+  text-align: right;
+}
+section .course .right {
+  left: 50%;
+  text-align: left;
+}
+section .course .content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5vh;
+  box-shadow: 7px 7px 5px #190061;
+}
+section .course .content h3 {
+  color: #3500d3;
+  font-size: 2rem;
+}
+section .course .content h6 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+section .course .content p {
+  color: black;
+  font-size: 1.6rem;
+  margin-top: 15px;
+}
+section .course .content .italic {
+  color: gray;
+  font-style: italic;
+}
+section .course .left .content::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  border-left: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+section .course .right .content::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  border-right: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+section .course .date {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #240090;
+  padding: 5px 5vw;
+  border-radius: 20px;
+  border: 1px solid white;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+section .course .date:first-of-type {
+  top: 0;
+}
+section .portfolio .example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section .portfolio .example div {
+  width: 95%;
+  height: 60vh;
+}
+section .portfolio .example h3 {
+  text-align: center;
+}
+section .portfolio .example img {
+  height: 300px;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */

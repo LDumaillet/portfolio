@@ -1,12 +1,12 @@
-$primarycolor: #3500d3;
+$primaryColor: #3500d3;
 
-$secondarycolor: #240090;
+$secondaryColor: #240090;
 
-$thirdcolor: #190061;
+$thirdColor: #190061;
 
-$fourthcolor: #0c0032;
+$fourthColor: #0c0032;
 
-$fifthcolor: #282828;
+$fifthColor: #282828;
 
 * {
   font-size: 62.5%;
@@ -19,9 +19,8 @@ html {
   background: black;
 }
 
-.flux {
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
+.flux-right {
+  margin-right: 5vw;
 }
 
 a {
@@ -30,4 +29,28 @@ a {
 
 li {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: white;
+}
+
+h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  background: $fifthColor;
+  border-radius: 20px;
+  width: 30vw;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10vh;
+  box-shadow: 7px 7px 5px $thirdColor;
 }
