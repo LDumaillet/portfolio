@@ -13,12 +13,13 @@
   <header>
     <nav class="navbar">
       <ul>
-        <li>Accueil</li>
+        <li><img src="pictures/logo.png" alt="logo Lucas DUMAILLET"></li>
         <li>A propos</li>
         <li>Parcours</li>
         <li>Portfolio</li>
         <li>Centres d'intérêt</li>
         <li>Contact</li>
+        <li><img src="pictures/menu-burger.svg" alt="menu hamburger"></li>
       </ul>
     </nav>
   </header>
@@ -36,7 +37,7 @@
       <div class="about flux-right">
         <h2>A propos</h2>
         <h6>Bonjour, bienvenue !</h6>
-        <p>Je m'appelle Lucas, j'ai 29 ans et vous allez pouvoir découvrir mon parcours</p>
+        <p>Je m'appelle Lucas, j'ai 29 ans et vous allez pouvoir découvrir mon parcours.</p>
         <p>En reconversion professionnelle en tant que développeur web, j’ai d’abord acquis des compétences en HTML, CSS
           et JavaScript de manière autodidacte. Désireux d’approfondir mes connaissances et d’obtenir un diplôme
           reconnu,
@@ -123,26 +124,113 @@
           <div class="model">
             <h3>Maquette avec Figma</h3>
             <img src="./pictures/maquette.png" alt="Maquette Figma">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>Figma</p>
+            </div>
           </div>
           <div class="gaming-campus">
             <h3>Reproduction du gaming campus</h3>
             <img src="./pictures/gaming_campus.png" alt="Site du gaming campus reproduit">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
           </div>
           <div class="api">
             <h3>Extraction API de pays</h3>
             <img src="./pictures/api_pays.png" alt="API Pays">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+            </div>
           </div>
           <div class="arcadia">
             <h3>Site du Zoo Arcadia</h3>
             <img src="./pictures/zoo_arcadia.png" alt="Accueil du zoo arcadia">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>PHP</p>
+              <p>MariaDB</p>
+              <p>MongoDB</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="center-of-interet"></div>
-
-      <div class="contact"></div>
+      <div class="center-of-interet flux-right">
+        <h2>Centres d'intérêt</h2>
+        <div class="car">
+          <h6>Automobile</h6>
+        </div>
+        <div class="techno">
+          <h6>Technologie</h6>
+        </div>
+        <div class="read">
+          <h6>Lecture</h6>
+        </div>
+        <div class="music">
+          <h6>Musique</h6>
+        </div>
+        <div class="basket">
+          <h6>Basket-Ball</h6>
+        </div>
+      </div>
+      <div class="form-contact flux-right">
+        <h2>Contact</h2>
+        <form method="post">
+          <div class="form">
+            <div>
+              <label for="name" class="name"> Votre nom</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+              <label for="email">Votre email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+              <label for="title" class="opinion"> Votre titre</label>
+              <input type="title" name="title" id="title" required>
+            </div>
+            <div>
+              <label for="message" class="message"> Votre message</label>
+              <textarea name="message" id="message" placeholder="Indiquez votre message" required></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" name="contact" value="Envoyer">
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
+
+    <hr class="flux-right">
+
+    <footer class="flux-right">
+      <div class="logo">
+        <a href="https://www.linkedin.com/in/lucas-dumaillet-3558a235b" class="tooltip-container">
+          <img src="pictures/linkedin.svg" alt="logo-linkedin">
+          <span class="tooltip">Accéder à mon LinkedIn</span>
+        </a>
+        <a href="file/CV_Lucas_DUMAILLET.pdf" class="tooltip-container">
+          <img src="pictures/profile.svg" alt="logo-profil">
+          <span class="tooltip tooltip-cv">Télécharger mon CV</span>
+        </a>
+        <a href="mailto:dumaillet.lucas@gmail.com" class="tooltip-container">
+          <img src="pictures/mail.svg" alt="logo-email">
+          <span class="tooltip">Envoyer un email</span>
+        </a>
+      </div>
+      <div class="copyright">
+        <p><img src="pictures/copyright.svg" alt="copyright"> | Lucas DUMAILLET | Développeur web et web mobile</p>
+      </div>
+    </footer>
   </main>
 
 </body>

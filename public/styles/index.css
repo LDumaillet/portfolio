@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
   max-width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -44,6 +46,18 @@ h2 {
   margin-bottom: 10vh;
   box-shadow: 7px 7px 5px #190061;
 }
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 3rem;
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 2.2rem;
+    width: 60vw;
+  }
+}
 
 .navbar ul {
   display: flex;
@@ -57,7 +71,33 @@ h2 {
   margin: 2.5vh 5vw;
   border-radius: 50px;
   background-color: #282828;
-  box-shadow: 10px 5px 5px #190061;
+  box-shadow: 0px 0px 5px 5px #3500d3;
+}
+@media screen and (max-width: 1100px) {
+  .navbar ul {
+    flex-direction: row;
+    height: 7.5vh;
+    width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2.5vh 0 0 0;
+    overflow: visible;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul {
+    flex-direction: column;
+    height: 80%;
+    width: 25vw;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar ul {
+    width: 47.5vw;
+    left: 30%;
+  }
 }
 .navbar ul li {
   display: flex;
@@ -67,21 +107,126 @@ h2 {
   text-orientation: mixed;
   width: 7.5vw;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   transition: 0.5s;
   transition-timing-function: ease-out;
+  z-index: 10;
 }
-.navbar ul li:hover {
+@media screen and (max-width: 1100px) {
+  .navbar ul li {
+    writing-mode: horizontal-tb;
+    width: 15vw;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li {
+    width: 25vw;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar ul li {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar ul li:nth-child(5) {
+    width: 17vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar ul li:nth-child(5) {
+    width: 22.5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar ul li:nth-child(5) {
+    width: 45vw;
+  }
+}
+.navbar ul li:first-child {
+  width: 40px;
+  height: 40px;
+  padding: 0 2.5vw;
+  transition: transform 0.5s ease;
+}
+.navbar ul li:first-child:hover {
+  transform: rotate(360deg);
+}
+@media screen and (max-width: 1100px) {
+  .navbar ul li:first-child {
+    width: 35px;
+    height: 35px;
+  }
+  .navbar ul li:first-child:hover {
+    transform: translate(10px, 0);
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:first-child {
+    padding: 0 1vw;
+  }
+  .navbar ul li:first-child:hover {
+    transform: translate(5px, 0);
+  }
+}
+.navbar ul li:last-child {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:last-child {
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+  .navbar ul li:last-child:hover {
+    transform: translate(-5px, 0);
+  }
+}
+.navbar ul li:hover:not(:first-child, :last-child) {
   color: #3500d3;
   border: 2px solid white;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.2);
   width: 4vw;
-  height: 22vh;
+  height: 23vh;
+}
+@media screen and (max-width: 1100px) {
+  .navbar ul li:hover:not(:first-child, :last-child) {
+    width: 17vw;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:hover:not(:first-child, :last-child) {
+    width: 23vw;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar ul li:hover:not(:first-child, :last-child) {
+    width: 45vw;
+  }
 }
 
 section {
   margin-left: 20vw;
+}
+@media screen and (max-width: 1100px) {
+  section {
+    margin: 12.5vh 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  section {
+    margin: 10vh 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  section {
+    margin: 0 0;
+  }
 }
 section .welcome {
   height: 100vh;
@@ -104,9 +249,39 @@ section .welcome .presentation h1 {
   text-transform: uppercase;
   text-shadow: 3px 3px rgb(53, 0, 211);
 }
+@media screen and (max-width: 1100px) {
+  section .welcome .presentation h1 {
+    font-size: 7.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .welcome .presentation h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  section .welcome .presentation h1 {
+    font-size: 3rem;
+  }
+}
 section .welcome .presentation h3 {
   font-size: 5rem;
   text-shadow: 3px 3px rgb(53, 0, 211);
+}
+@media screen and (max-width: 1100px) {
+  section .welcome .presentation h3 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .welcome .presentation h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  section .welcome .presentation h3 {
+    font-size: 1.6rem;
+  }
 }
 section .welcome .presentation::before {
   content: "";
@@ -131,6 +306,11 @@ section .welcome .presentation::before {
 section .about {
   margin-top: 20vh;
 }
+@media screen and (max-width: 1100px) {
+  section .about {
+    margin: 10vh 5vw 0 5vw;
+  }
+}
 section .about h6 {
   font-size: 2.4rem;
   margin-bottom: 10px;
@@ -142,6 +322,16 @@ section .about p {
 }
 section .course {
   margin-top: 10vh;
+}
+@media screen and (max-width: 700px) {
+  section .course {
+    margin: 10vh 0 0 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  section .course h2 {
+    margin-left: 5vw;
+  }
 }
 section .course div {
   font-size: 2rem;
@@ -168,6 +358,11 @@ section .course .timeline-item {
   padding: 10px 20px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 700px) {
+  section .course .timeline-item {
+    padding: 5px 10px;
+  }
+}
 section .course .left {
   left: 0;
   text-align: right;
@@ -181,22 +376,69 @@ section .course .content {
   padding: 30px;
   border-radius: 6px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 5vh;
+  margin-top: 7vh;
   box-shadow: 7px 7px 5px #190061;
+  transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 1100px) {
+  section .course .content {
+    padding: 15px;
+    margin-top: 7.5vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .course .content {
+    padding: 5px;
+  }
+}
+section .course .content:hover {
+  box-shadow: 0px 0px 5px 5px #3500d3;
 }
 section .course .content h3 {
   color: #3500d3;
   font-size: 2rem;
+}
+@media screen and (max-width: 1100px) {
+  section .course .content h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  section .course .content h3 {
+    font-size: 1.4rem;
+  }
 }
 section .course .content h6 {
   color: black;
   font-weight: bold;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 1100px) {
+  section .course .content h6 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .course .content h6 {
+    font-size: 1.2rem;
+  }
+}
 section .course .content p {
   color: black;
   font-size: 1.6rem;
   margin-top: 15px;
+}
+@media screen and (max-width: 1100px) {
+  section .course .content p {
+    font-size: 1.4rem;
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .course .content p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
 }
 section .course .content .italic {
   color: gray;
@@ -210,6 +452,11 @@ section .course .left .content::before {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
+@media screen and (max-width: 700px) {
+  section .course .left .content::before {
+    right: 5px;
+  }
+}
 section .course .right .content::before {
   content: "";
   position: absolute;
@@ -217,6 +464,11 @@ section .course .right .content::before {
   border-right: 10px solid #fff;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
+}
+@media screen and (max-width: 700px) {
+  section .course .right .content::before {
+    left: 5px;
+  }
 }
 section .course .date {
   position: absolute;
@@ -236,18 +488,353 @@ section .course .date {
 section .course .date:first-of-type {
   top: 0;
 }
+@media screen and (max-width: 1100px) {
+  section .portfolio {
+    margin-left: 5vw;
+  }
+}
 section .portfolio .example {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
 }
-section .portfolio .example div {
+@media screen and (max-width: 700px) {
+  section .portfolio .example {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+section .portfolio .example .model,
+section .portfolio .example .gaming-campus,
+section .portfolio .example .api,
+section .portfolio .example .arcadia {
   width: 95%;
-  height: 60vh;
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in;
+}
+section .portfolio .example .model:hover,
+section .portfolio .example .gaming-campus:hover,
+section .portfolio .example .api:hover,
+section .portfolio .example .arcadia:hover {
+  transform: scale(1.03);
+}
+section .portfolio .example .model:hover img,
+section .portfolio .example .gaming-campus:hover img,
+section .portfolio .example .api:hover img,
+section .portfolio .example .arcadia:hover img {
+  opacity: 1;
 }
 section .portfolio .example h3 {
+  color: white;
+  border: solid 2px #3500d3;
   text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+@media screen and (max-width: 700px) {
+  section .portfolio .example h3 {
+    font-size: 1.8rem;
+  }
 }
 section .portfolio .example img {
-  height: 300px;
+  height: 45vh;
+  width: 100%;
   border-radius: 20px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+}
+@media screen and (max-width: 700px) {
+  section .portfolio .example img {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .portfolio .example img {
+    height: 30vh;
+  }
+}
+section .portfolio .example h6 {
+  font-size: 2rem;
+  -webkit-text-decoration: underline overline #3500d3;
+          text-decoration: underline overline #3500d3;
+  text-align: center;
+  margin: 10px;
+}
+@media screen and (max-width: 700px) {
+  section .portfolio .example h6 {
+    font-size: 1.6rem;
+  }
+}
+section .portfolio .example p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  section .portfolio .example p {
+    font-size: 1.4rem;
+  }
+}
+section .center-of-interet {
+  margin-top: 10vh;
+}
+@media screen and (max-width: 1100px) {
+  section .center-of-interet {
+    margin-left: 5vw;
+  }
+}
+section .center-of-interet h2 {
+  width: 50vw;
+}
+section .center-of-interet div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  height: 25vh;
+  width: 100%;
+  box-shadow: 0px 0px 5px 5px #3500d3;
+  margin: 3vh 0 3vh 0;
+}
+section .center-of-interet h6 {
+  font-size: 4rem;
+}
+section .center-of-interet .car {
+  background: url(/public/pictures/car.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+  opacity: 20;
+  transition: transform 0.5s ease;
+}
+section .center-of-interet .car:hover {
+  transform: scale(1.05);
+}
+section .center-of-interet .techno {
+  background: url(/public/pictures/techno.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  transition: transform 0.5s ease;
+}
+section .center-of-interet .techno:hover {
+  transform: scale(1.05);
+}
+section .center-of-interet .read {
+  background: url(/public/pictures/read.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  transition: transform 0.5s ease;
+}
+section .center-of-interet .read:hover {
+  transform: scale(1.05);
+}
+section .center-of-interet .music {
+  background: url(/public/pictures/music.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  transition: transform 0.5s ease;
+}
+section .center-of-interet .music:hover {
+  transform: scale(1.05);
+}
+section .center-of-interet .basket {
+  background: url(/public/pictures/basket.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 70%;
+  transition: transform 0.5s ease;
+}
+section .center-of-interet .basket:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1100px) {
+  section .form-contact {
+    margin-left: 5vw;
+  }
+}
+section .form-contact h2 {
+  margin-top: 10vh;
+}
+section .form-contact .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #3500d3;
+}
+section .form-contact .form label,
+section .form-contact .form input,
+section .form-contact .form textarea {
+  color: white;
+}
+section .form-contact .form label {
+  padding: 5px 0 5px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+section .form-contact .form input {
+  height: 7.5vh;
+  border-radius: 20px;
+  font-size: 2rem;
+  color: #3500d3;
+  text-align: center;
+  border: solid 2px #3500d3;
+}
+section .form-contact .form textarea {
+  resize: none;
+  border-radius: 20px;
+  min-height: 25vh;
+  font-size: 2rem;
+  color: #3500d3;
+  border: solid 2px #3500d3;
+  text-align: justify;
+  max-width: 40vw;
+  padding: 15px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1100px) {
+  section .form-contact .form textarea {
+    max-width: 60vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .form-contact .form textarea {
+    max-width: 75vw;
+  }
+}
+section .form-contact .form div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 20px 0;
+  width: 40vw;
+}
+@media screen and (max-width: 1100px) {
+  section .form-contact .form div {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  section .form-contact .form div {
+    width: 75vw;
+  }
+}
+section .form-contact .form .submit input {
+  background-color: #3500d3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+section .form-contact .form .submit input:hover {
+  background-color: white;
+  color: #3500d3;
+  border: solid 2px #3500d3;
+}
+
+hr {
+  margin: 10vh 0 10vh 20vw;
+  border: solid 5px white;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1100px) {
+  hr {
+    margin-left: 5vw;
+  }
+}
+
+footer {
+  margin-left: 20vw;
+  background-color: #3500d3;
+}
+@media screen and (max-width: 1100px) {
+  footer {
+    margin-left: 5vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    margin: 0 !important;
+  }
+}
+footer .logo {
+  display: flex;
+  justify-content: space-around;
+}
+footer .logo .tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+footer .logo .tooltip-container img {
+  height: 7.5vh;
+  margin: 10px;
+}
+footer .logo .tooltip-container p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+footer .logo .tooltip-container .tooltip {
+  visibility: hidden;
+  background-color: #282828;
+  color: #fff;
+  text-align: center;
+  padding: 6px 15px;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+footer .logo .tooltip-container .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #282828 transparent transparent transparent;
+}
+footer .logo .tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+footer .logo .tooltip-container .tooltip-cv {
+  padding: 6px 32.5px 6px 20px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright p {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 2.5vh 0 2.5vh 0;
+  font-size: 2rem;
+}
+@media screen and (max-width: 700px) {
+  footer .copyright p {
+    font-size: 1rem;
+  }
+}
+footer .copyright p img {
+  height: 20px;
+  width: 20px;
+}
+@media screen and (max-width: 700px) {
+  footer .copyright p img {
+    height: 10px;
+    width: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */
