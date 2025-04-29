@@ -147,8 +147,7 @@
         }
       }
 
-      &:hover:not(:first-child, :last-child),
-      #link-about.active {
+      &:hover:not(:first-child, :last-child) {
         color: $primaryColor;
         border: 2px solid white;
         border-radius: 100px;
@@ -171,6 +170,11 @@
         }
       }
     }
+
+    #link-index.active {
+      transform: rotate(360deg);
+    }
+
     #link-about.active,
     #link-course.active,
     #link-portfolio.active,

@@ -70,7 +70,7 @@ section {
       left: 0;
       width: 100%;
       height: 100%;
-      background: url(/public/pictures/background.svg) no-repeat center;
+      background: url(../pictures/background.svg) no-repeat center;
       background-size: contain;
 
       animation: rotateBackground 15s linear infinite;
@@ -478,7 +478,7 @@ section {
     }
 
     .car {
-      background: url(/public/pictures/car.jpg) no-repeat;
+      background: url(../pictures/car.jpg) no-repeat;
       background-size: cover;
       background-position-y: 30%;
       opacity: 20;
@@ -490,7 +490,7 @@ section {
     }
 
     .techno {
-      background: url(/public/pictures/techno.jpg) no-repeat;
+      background: url(../pictures/techno.jpg) no-repeat;
       background-size: cover;
       background-position-y: 60%;
       transition: transform 0.5s ease;
@@ -501,7 +501,7 @@ section {
     }
 
     .read {
-      background: url(/public/pictures/read.jpg) no-repeat;
+      background: url(../pictures/read.jpg) no-repeat;
       background-size: cover;
       background-position-y: 60%;
       transition: transform 0.5s ease;
@@ -512,7 +512,7 @@ section {
     }
 
     .music {
-      background: url(/public/pictures/music.jpg) no-repeat;
+      background: url(../pictures/music.jpg) no-repeat;
       background-size: cover;
       background-position-y: 60%;
       transition: transform 0.5s ease;
@@ -523,7 +523,7 @@ section {
     }
 
     .basket {
-      background: url(/public/pictures/basket.jpg) no-repeat;
+      background: url(../pictures/basket.jpg) no-repeat;
       background-size: cover;
       background-position-y: 70%;
       transition: transform 0.5s ease;

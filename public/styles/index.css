@@ -8,6 +8,7 @@
 }
 
 html {
+  overflow-x: hidden;
   background: black;
 }
 
@@ -201,8 +202,7 @@ h2 {
     transform: translate(-5px, 0);
   }
 }
-.navbar ul li:hover:not(:first-child, :last-child),
-.navbar ul li #link-about.active {
+.navbar ul li:hover:not(:first-child, :last-child) {
   color: #3500d3;
   border: 2px solid white;
   border-radius: 100px;
@@ -211,24 +211,24 @@ h2 {
   height: 23vh;
 }
 @media screen and (max-width: 1100px) {
-  .navbar ul li:hover:not(:first-child, :last-child),
-  .navbar ul li #link-about.active {
+  .navbar ul li:hover:not(:first-child, :last-child) {
     width: 17vw;
     height: 5vh;
   }
 }
 @media screen and (max-width: 700px) {
-  .navbar ul li:hover:not(:first-child, :last-child),
-  .navbar ul li #link-about.active {
+  .navbar ul li:hover:not(:first-child, :last-child) {
     width: 23vw;
     height: 5vh;
   }
 }
 @media screen and (max-width: 450px) {
-  .navbar ul li:hover:not(:first-child, :last-child),
-  .navbar ul li #link-about.active {
+  .navbar ul li:hover:not(:first-child, :last-child) {
     width: 45vw;
   }
+}
+.navbar ul #link-index.active {
+  transform: rotate(360deg);
 }
 .navbar ul #link-about.active,
 .navbar ul #link-course.active,
@@ -365,7 +365,7 @@ section .welcome .presentation::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/public/pictures/background.svg) no-repeat center;
+  background: url(../pictures/background.svg) no-repeat center;
   background-size: contain;
   animation: rotateBackground 15s linear infinite;
   z-index: -1;
@@ -751,7 +751,7 @@ section .center-of-interet h6 {
   font-size: 4rem;
 }
 section .center-of-interet .car {
-  background: url(/public/pictures/car.jpg) no-repeat;
+  background: url(../pictures/car.jpg) no-repeat;
   background-size: cover;
   background-position-y: 30%;
   opacity: 20;
@@ -761,7 +761,7 @@ section .center-of-interet .car:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .techno {
-  background: url(/public/pictures/techno.jpg) no-repeat;
+  background: url(../pictures/techno.jpg) no-repeat;
   background-size: cover;
   background-position-y: 60%;
   transition: transform 0.5s ease;
@@ -770,7 +770,7 @@ section .center-of-interet .techno:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .read {
-  background: url(/public/pictures/read.jpg) no-repeat;
+  background: url(../pictures/read.jpg) no-repeat;
   background-size: cover;
   background-position-y: 60%;
   transition: transform 0.5s ease;
@@ -779,7 +779,7 @@ section .center-of-interet .read:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .music {
-  background: url(/public/pictures/music.jpg) no-repeat;
+  background: url(../pictures/music.jpg) no-repeat;
   background-size: cover;
   background-position-y: 60%;
   transition: transform 0.5s ease;
@@ -788,7 +788,7 @@ section .center-of-interet .music:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .basket {
-  background: url(/public/pictures/basket.jpg) no-repeat;
+  background: url(../pictures/basket.jpg) no-repeat;
   background-size: cover;
   background-position-y: 70%;
   transition: transform 0.5s ease;

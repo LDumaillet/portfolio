@@ -16,7 +16,7 @@
   <header>
     <nav class="navbar">
       <ul>
-        <li><img src="pictures/logo.png" alt="logo Lucas DUMAILLET"></li>
+        <li id="link-index"><img src="pictures/logo.png" alt="logo Lucas DUMAILLET"></li>
         <li id="link-about">A propos</li>
         <li id="link-course">Parcours</li>
         <li id="link-portfolio">Portfolio</li>

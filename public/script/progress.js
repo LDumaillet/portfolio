@@ -1,3 +1,4 @@
+const linkIndex = document.getElementById("link-index");
 const about = document.getElementById("about");
 const linkAbout = document.getElementById("link-about");
 const course = document.getElementById("course");
@@ -31,7 +32,6 @@ window.addEventListener("scroll", () => {
 
   const progressBar = document.getElementById("progress-bar");
   progressBar.style.width = scrollPercent + "%";
-  console.log(scrollPercent);
 
   // Animation au scroll
 
@@ -117,6 +117,14 @@ window.addEventListener("scroll", () => {
 
   // Déplacement au clique
 
+  linkIndex.addEventListener("click", () => {
+    const aboutScroll = scrollHeight * 0;
+    window.scrollTo({
+      top: aboutScroll,
+      behavior: "smooth",
+    });
+  });
+
   linkAbout.addEventListener("click", () => {
     const aboutScroll = scrollHeight * 0.1;
     window.scrollTo({
@@ -158,6 +166,12 @@ window.addEventListener("scroll", () => {
   });
 
   // Hover sur la barre de navigation
+
+  if (scrollPercent >= 0 && scrollPercent < 7) {
+    linkIndex.classList.add("active");
+  } else {
+    linkIndex.classList.remove("active");
+  }
 
   if (scrollPercent > 7 && scrollPercent < 19) {
     linkAbout.classList.add("active");
