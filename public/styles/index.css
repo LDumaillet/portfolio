@@ -59,6 +59,19 @@ h2 {
   }
 }
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background: #3500d3;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 3px #190061;
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+}
+
 .navbar ul {
   display: flex;
   flex-direction: column;
@@ -87,10 +100,15 @@ h2 {
 }
 @media screen and (max-width: 700px) {
   .navbar ul {
-    flex-direction: column;
-    height: 80%;
     width: 25vw;
     left: 15%;
+  }
+  .navbar ul ul.active {
+    flex-direction: column;
+    height: 80%;
+  }
+  .navbar ul ul.active:nth-child(2), .navbar ul ul.active:nth-child(3), .navbar ul ul.active:nth-child(4), .navbar ul ul.active:nth-child(5), .navbar ul ul.active:nth-child(6) {
+    display: block;
   }
 }
 @media screen and (max-width: 450px) {
@@ -120,9 +138,8 @@ h2 {
   }
 }
 @media screen and (max-width: 700px) {
-  .navbar ul li {
-    width: 25vw;
-    font-size: 1.2rem;
+  .navbar ul li:nth-child(2), .navbar ul li:nth-child(3), .navbar ul li:nth-child(4), .navbar ul li:nth-child(5), .navbar ul li:nth-child(6) {
+    display: none;
   }
 }
 @media screen and (max-width: 450px) {
@@ -184,7 +201,8 @@ h2 {
     transform: translate(-5px, 0);
   }
 }
-.navbar ul li:hover:not(:first-child, :last-child) {
+.navbar ul li:hover:not(:first-child, :last-child),
+.navbar ul li #link-about.active {
   color: #3500d3;
   border: 2px solid white;
   border-radius: 100px;
@@ -193,20 +211,77 @@ h2 {
   height: 23vh;
 }
 @media screen and (max-width: 1100px) {
-  .navbar ul li:hover:not(:first-child, :last-child) {
+  .navbar ul li:hover:not(:first-child, :last-child),
+  .navbar ul li #link-about.active {
     width: 17vw;
     height: 5vh;
   }
 }
 @media screen and (max-width: 700px) {
-  .navbar ul li:hover:not(:first-child, :last-child) {
+  .navbar ul li:hover:not(:first-child, :last-child),
+  .navbar ul li #link-about.active {
     width: 23vw;
     height: 5vh;
   }
 }
 @media screen and (max-width: 450px) {
-  .navbar ul li:hover:not(:first-child, :last-child) {
+  .navbar ul li:hover:not(:first-child, :last-child),
+  .navbar ul li #link-about.active {
     width: 45vw;
+  }
+}
+.navbar ul #link-about.active,
+.navbar ul #link-course.active,
+.navbar ul #link-portfolio.active,
+.navbar ul #link-interet.active,
+.navbar ul #link-contact.active {
+  color: #3500d3;
+  border: 2px solid white;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 4vw;
+  height: 23vh;
+}
+@media screen and (max-width: 1100px) {
+  .navbar ul #link-about.active,
+  .navbar ul #link-course.active,
+  .navbar ul #link-portfolio.active,
+  .navbar ul #link-interet.active,
+  .navbar ul #link-contact.active {
+    width: 17vw;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul #link-about.active,
+  .navbar ul #link-course.active,
+  .navbar ul #link-portfolio.active,
+  .navbar ul #link-interet.active,
+  .navbar ul #link-contact.active {
+    width: 23vw;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar ul #link-about.active,
+  .navbar ul #link-course.active,
+  .navbar ul #link-portfolio.active,
+  .navbar ul #link-interet.active,
+  .navbar ul #link-contact.active {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul.active {
+    flex-direction: column;
+    height: 80%;
+  }
+  .navbar ul.active li:nth-child(n+2):nth-child(-n+6) {
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul.active li:nth-child(7) {
+    content: url(/public/pictures/arrow-up.svg);
   }
 }
 
@@ -311,6 +386,11 @@ section .about {
     margin: 10vh 5vw 0 5vw;
   }
 }
+section .about #about {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
+}
 section .about h6 {
   font-size: 2.4rem;
   margin-bottom: 10px;
@@ -327,6 +407,11 @@ section .course {
   section .course {
     margin: 10vh 0 0 0;
   }
+}
+section .course #course {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
 }
 @media screen and (max-width: 1100px) {
   section .course h2 {
@@ -488,10 +573,55 @@ section .course .date {
 section .course .date:first-of-type {
   top: 0;
 }
+section .course #first-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
+}
+section .course #second-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(200px);
+}
+section .course #third-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
+}
+section .course #fourth-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(200px);
+}
+section .course #fifth-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
+}
+section .course #sixth-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(200px);
+}
+section .course #seventh-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
+}
+section .course #eighth-item {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(200px);
+}
 @media screen and (max-width: 1100px) {
   section .portfolio {
     margin-left: 5vw;
   }
+}
+section .portfolio #portfolio {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
 }
 section .portfolio .example {
   display: grid;
@@ -526,6 +656,18 @@ section .portfolio .example .gaming-campus:hover img,
 section .portfolio .example .api:hover img,
 section .portfolio .example .arcadia:hover img {
   opacity: 1;
+}
+section .portfolio .example .model,
+section .portfolio .example .api {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
+}
+section .portfolio .example .gaming-campus,
+section .portfolio .example .arcadia {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(200px);
 }
 section .portfolio .example h3 {
   color: white;
@@ -586,6 +728,11 @@ section .center-of-interet {
   section .center-of-interet {
     margin-left: 5vw;
   }
+}
+section .center-of-interet #center-of-interet {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
 }
 section .center-of-interet h2 {
   width: 50vw;
@@ -656,6 +803,11 @@ section .center-of-interet .basket:hover {
 }
 section .form-contact h2 {
   margin-top: 10vh;
+}
+section .form-contact #contact {
+  opacity: 0;
+  transition: 1s ease;
+  transform: translateX(-200px);
 }
 section .form-contact .form {
   display: flex;
