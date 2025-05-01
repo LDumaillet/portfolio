@@ -219,8 +219,8 @@
         align-items: center;
       }
 
-      li:last-child {
-        content: url(/pictures/arrow-up.svg);
+      li:last-child::before {
+        content: url(../pictures/arrow-up.svg);
       }
     }
   }
