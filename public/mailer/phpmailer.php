@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['contact'])) {
 
     try {
       // Configuration
-      $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+      // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
       //Je veux des infos de débug
 
       //On configure le SMTP
