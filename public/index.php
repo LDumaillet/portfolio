@@ -1,3 +1,9 @@
+<?php
+
+require_once "mailer/phpmailer.php"
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -189,10 +195,6 @@
         <h2 id="contact">Contact</h2>
         <form method="post">
           <div class="form">
-            <div>
-              <label for="name" class="name"> Votre nom</label>
-              <input type="text" name="name" id="name" required>
-            </div>
             <div>
               <label for="email">Votre email</label>
               <input type="email" name="email" id="email" required>
