@@ -147,6 +147,10 @@
           height: 40px;
           width: 40px;
 
+          li:last-child::before {
+            content: url(/pictures/arrow-up.svg);
+          }
+
           &:hover {
             transform: translate(-5px, 0);
           }
@@ -220,7 +224,7 @@
       }
 
       li:last-child::before {
-        content: url(../pictures/arrow-up.svg);
+        content: url(/pictures/arrow-up.svg);
       }
     }
   }
