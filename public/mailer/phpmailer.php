@@ -2,11 +2,6 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-var_dump(file_exists(__DIR__ . '/../../vendor/autoload.php')); // doit afficher true
-var_dump(class_exists(\PHPMailer\PHPMailer\PHPMailer::class)); // doit afficher true
-
-
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
