@@ -1,6 +1,9 @@
 <?php
 
-require_once __DIR__ . '../../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
+
+var_dump(class_exists(\PHPMailer\PHPMailer\PHPMailer::class));
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
