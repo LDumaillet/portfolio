@@ -71,6 +71,13 @@ h2 {
   box-shadow: 0px 0px 5px 3px #190061;
   z-index: 9999;
   transition: width 0.25s ease-out;
+  pointer-events: none;
+  will-change: width;
+}
+@media screen and (max-width: 1100px) {
+  #progress-bar {
+    height: 3px;
+  }
 }
 
 .navbar ul {
@@ -230,6 +237,11 @@ h2 {
 .navbar ul #link-index.active {
   transform: rotate(360deg);
 }
+@media screen and (max-width: 700px) {
+  .navbar ul #link-index.active {
+    transform: none;
+  }
+}
 .navbar ul #link-about.active,
 .navbar ul #link-course.active,
 .navbar ul #link-portfolio.active,
@@ -280,8 +292,8 @@ h2 {
     display: flex;
     align-items: center;
   }
-  .navbar ul.active li:nth-child(7) {
-    content: url(/public/pictures/arrow-up.svg);
+  .navbar ul.active li:last-child {
+    content: url(/../pictures/arrow-up.svg);
   }
 }
 
@@ -570,44 +582,25 @@ section .course .date {
   white-space: nowrap;
   z-index: 1;
 }
+@media screen and (max-width: 700px) {
+  section .course .date {
+    padding: 2.5px 2.5vw;
+  }
+}
 section .course .date:first-of-type {
   top: 0;
 }
-section .course #first-item {
-  opacity: 0;
-  transition: 1s ease;
-  transform: translateX(-200px);
-}
-section .course #second-item {
-  opacity: 0;
-  transition: 1s ease;
-  transform: translateX(200px);
-}
-section .course #third-item {
-  opacity: 0;
-  transition: 1s ease;
-  transform: translateX(-200px);
-}
-section .course #fourth-item {
-  opacity: 0;
-  transition: 1s ease;
-  transform: translateX(200px);
-}
-section .course #fifth-item {
-  opacity: 0;
-  transition: 1s ease;
-  transform: translateX(-200px);
-}
-section .course #sixth-item {
-  opacity: 0;
-  transition: 1s ease;
-  transform: translateX(200px);
-}
+section .course #first-item,
+section .course #third-item,
+section .course #fifth-item,
 section .course #seventh-item {
   opacity: 0;
   transition: 1s ease;
   transform: translateX(-200px);
 }
+section .course #second-item,
+section .course #fourth-item,
+section .course #sixth-item,
 section .course #eighth-item {
   opacity: 0;
   transition: 1s ease;
@@ -885,6 +878,22 @@ section .form-contact .form .submit input:hover {
   background-color: white;
   color: #3500d3;
   border: solid 2px #3500d3;
+}
+@media screen and (max-width: 700px) {
+  section #second-item,
+  section #fourth-item,
+  section #sixth-item,
+  section #eighth-item,
+  section #first-item,
+  section #third-item,
+  section #fifth-item,
+  section #seventh-item,
+  section .model,
+  section .gaming-campus,
+  section .api,
+  section .arcadia {
+    transform: none !important;
+  }
 }
 
 hr {

@@ -147,10 +147,6 @@
           height: 40px;
           width: 40px;
 
-          li:last-child::before {
-            content: url(/pictures/arrow-up.svg);
-          }
-
           &:hover {
             transform: translate(-5px, 0);
           }
@@ -183,6 +179,10 @@
 
     #link-index.active {
       transform: rotate(360deg);
+
+      @media screen and (max-width: 700px) {
+        transform: none;
+      }
     }
 
     #link-about.active,
@@ -223,8 +223,8 @@
         align-items: center;
       }
 
-      li:last-child::before {
-        content: url(/pictures/arrow-up.svg);
+      li:last-child {
+        content: url(/../pictures/arrow-up.svg);
       }
     }
   }

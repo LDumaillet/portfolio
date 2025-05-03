@@ -72,7 +72,6 @@ section {
       height: 100%;
       background: url(../pictures/background.svg) no-repeat center;
       background-size: contain;
-
       animation: rotateBackground 15s linear infinite;
       z-index: -1;
     }
@@ -285,53 +284,27 @@ section {
       text-align: center;
       white-space: nowrap;
       z-index: 1;
+
+      @media screen and (max-width: 700px) {
+        padding: 2.5px 2.5vw;
+      }
     }
     .date:first-of-type {
       top: 0;
     }
 
-    #first-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
-    }
-
-    #second-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(200px);
-    }
-
-    #third-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
-    }
-
-    #fourth-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(200px);
-    }
-
-    #fifth-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
-    }
-
-    #sixth-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(200px);
-    }
-
+    #first-item,
+    #third-item,
+    #fifth-item,
     #seventh-item {
       opacity: 0;
       transition: 1s ease;
       transform: translateX(-200px);
     }
 
+    #second-item,
+    #fourth-item,
+    #sixth-item,
     #eighth-item {
       opacity: 0;
       transition: 1s ease;
@@ -630,6 +603,23 @@ section {
           }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    #second-item,
+    #fourth-item,
+    #sixth-item,
+    #eighth-item,
+    #first-item,
+    #third-item,
+    #fifth-item,
+    #seventh-item,
+    .model,
+    .gaming-campus,
+    .api,
+    .arcadia {
+      transform: none !important;
     }
   }
 }
