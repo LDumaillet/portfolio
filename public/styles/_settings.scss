@@ -63,3 +63,23 @@ h2 {
     width: 60vw;
   }
 }
+
+// Scroll Bar
+
+/* Appliquer à tout le site */
+::-webkit-scrollbar {
+  width: 8px; /* ou 'height' si c'est horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: $fourthColor; /* fond du rail */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primaryColor; /* le "curseur" */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
