@@ -44,7 +44,7 @@ require_once "mailer/phpmailer.php"
       </div>
 
       <div class="about flux-right">
-        <h2 id="about">A propos</h2>
+        <h2 id="about" class="reveal-left">A propos</h2>
         <h6>Bonjour, bienvenue !</h6>
         <p>Je m'appelle Lucas, j'ai 29 ans et vous allez pouvoir découvrir mon parcours.</p>
         <p>En reconversion professionnelle en tant que développeur web, j’ai d’abord acquis des compétences en HTML, CSS
@@ -66,51 +66,51 @@ require_once "mailer/phpmailer.php"
       </div>
 
       <div class="course flux-right">
-        <h2 id="course">Mon parcours</h2>
+        <h2 id="course" class="reveal-left">Mon parcours</h2>
         <div class="timeline">
           <div class="date">2014</div>
-          <div class="timeline-item left" id="first-item">
+          <div class="timeline-item left reveal-left" id="first-item">
             <div class="content">
               <h3>CAP MAINTENANCE DES VEHICULES AUTOMOBILES</h3>
               <p>Lycée des métiers entre Meurthe et Sanon</p>
             </div>
           </div>
           <div class="date">2015</div>
-          <div class="timeline-item right" id="second-item">
+          <div class="timeline-item right reveal-right" id="second-item">
             <div class="content">
               <h3>BAC MAINTENANCE DES VEHICULES AUTOMOBILES</h3>
               <h6>Avec mention</h6>
               <p>Lycée des métiers entre Meurthe et Sanon</p>
             </div>
           </div>
-          <div class="timeline-item left" id="third-item">
+          <div class="timeline-item left reveal-left" id="third-item">
             <div class="content">
               <h3>Equipier de cuisine</h3>
               <p>Mcdonald’s - Frouard</p>
             </div>
           </div>
-          <div class="timeline-item right" id="fourth-item">
+          <div class="timeline-item right reveal-right" id="fourth-item">
             <div class="content">
               <h3>Vulcanisateur mécanicien</h3>
               <p>ABC - Pompey</p>
             </div>
           </div>
           <div class="date">2016</div>
-          <div class="timeline-item left" id="fifth-item">
+          <div class="timeline-item left reveal-left" id="fifth-item">
             <div class="content">
               <h3>Maintenance automobile service rapide</h3>
               <p>Peugeot - Pont à Mousson</p>
             </div>
           </div>
           <div class="date">2018</div>
-          <div class="timeline-item right" id="sixth-item">
+          <div class="timeline-item right reveal-right" id="sixth-item">
             <div class="content">
               <h3>Conseiller commercial après-vente</h3>
               <p>Peugeot - Pont à Mousson</p>
             </div>
           </div>
           <div class="date">2022</div>
-          <div class="timeline-item left" id="seventh-item">
+          <div class="timeline-item left reveal-left" id="seventh-item">
             <div class="content">
               <h3>Conseiller commercial après-vente</h3>
               <p>Peugeot et Citroën - Pont à Mousson</p>
@@ -118,7 +118,7 @@ require_once "mailer/phpmailer.php"
             </div>
           </div>
           <div class="date">2025</div>
-          <div class="timeline-item right" id="eighth-item">
+          <div class="timeline-item right reveal-right" id="eighth-item">
             <div class="content">
               <h3>Graduate développeur web et web mobile</h3>
               <p>Studi - Ecole en ligne</p>
@@ -128,9 +128,9 @@ require_once "mailer/phpmailer.php"
       </div>
 
       <div class="portfolio flux-right">
-        <h2 id="portfolio">Portfolio</h2>
+        <h2 id="portfolio" class="reveal-left">Portfolio</h2>
         <div class="example">
-          <div class="model">
+          <div class="model reveal-left">
             <h3>Maquette avec Figma</h3>
             <img src="./pictures/maquette.png" alt="Maquette Figma">
             <div class="not-display">
@@ -138,7 +138,7 @@ require_once "mailer/phpmailer.php"
               <p>Figma</p>
             </div>
           </div>
-          <div class="gaming-campus">
+          <div class="gaming-campus reveal-right">
             <h3>Reproduction du gaming campus</h3>
             <img src="./pictures/gaming_campus.png" alt="Site du gaming campus reproduit">
             <div class="not-display">
@@ -147,7 +147,7 @@ require_once "mailer/phpmailer.php"
               <p>CSS</p>
             </div>
           </div>
-          <div class="api">
+          <div class="api reveal-left">
             <h3>Extraction API de pays</h3>
             <img src="./pictures/api_pays.png" alt="API Pays">
             <div class="not-display">
@@ -157,7 +157,7 @@ require_once "mailer/phpmailer.php"
               <p>Javascript</p>
             </div>
           </div>
-          <div class="arcadia">
+          <div class="arcadia reveal-right">
             <h3>Site du Zoo Arcadia</h3>
             <img src="./pictures/zoo_arcadia.png" alt="Accueil du zoo arcadia">
             <div class="not-display">
@@ -174,7 +174,7 @@ require_once "mailer/phpmailer.php"
       </div>
 
       <div class="center-of-interet flux-right">
-        <h2 id="center-of-interet">Centres d'intérêt</h2>
+        <h2 id="center-of-interet" class="reveal-left">Centres d'intérêt</h2>
         <div class="car">
           <h6>Automobile</h6>
         </div>
@@ -192,7 +192,7 @@ require_once "mailer/phpmailer.php"
         </div>
       </div>
       <div class="form-contact flux-right">
-        <h2 id="contact">Contact</h2>
+        <h2 id="contact" class="reveal-left">Contact</h2>
         <form method="post">
           <div class="form">
             <div>

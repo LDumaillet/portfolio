@@ -23,96 +23,15 @@ const contact = document.getElementById("contact");
 const linkContact = document.getElementById("link-contact");
 
 window.addEventListener("scroll", () => {
-  const scrollTop =
-    document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
+    document.documentElement.scrollHeight - window.innerHeight;
+
   const scrollPercent = (scrollTop / scrollHeight) * 100;
 
   const progressBar = document.getElementById("progress-bar");
-  progressBar.style.width = scrollPercent + "%";
-
-  // Animation au scroll
-
-  if (scrollPercent > 4) {
-    about.style.opacity = 1;
-    about.style.transform = "none";
-  }
-
-  if (scrollPercent > 16) {
-    course.style.opacity = 1;
-    course.style.transform = "none";
-  }
-  if (scrollPercent > 19) {
-    firstItem.style.opacity = 1;
-    firstItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 22) {
-    secondItem.style.opacity = 1;
-    secondItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 24) {
-    thirdItem.style.opacity = 1;
-    thirdItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 28) {
-    fourthItem.style.opacity = 1;
-    fourthItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 31) {
-    fifthItem.style.opacity = 1;
-    fifthItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 34) {
-    sixthItem.style.opacity = 1;
-    sixthItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 37) {
-    seventhItem.style.opacity = 1;
-    seventhItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 40) {
-    eighthItem.style.opacity = 1;
-    eighthItem.style.transform = "none";
-  }
-
-  if (scrollPercent > 43) {
-    portfolio.style.opacity = 1;
-    portfolio.style.transform = "none";
-  }
-
-  if (scrollPercent > 46) {
-    model.style.opacity = 1;
-    model.style.transform = "none";
-
-    gamingCampus.style.opacity = 1;
-    gamingCampus.style.transform = "none";
-  }
-
-  if (scrollPercent > 54) {
-    api.style.opacity = 1;
-    api.style.transform = "none";
-
-    arcadia.style.opacity = 1;
-    arcadia.style.transform = "none";
-  }
-
-  if (scrollPercent > 62) {
-    centerInteret.style.opacity = 1;
-    centerInteret.style.transform = "none";
-  }
-
-  if (scrollPercent > 82) {
-    contact.style.opacity = 1;
-    contact.style.transform = "none";
+  if (progressBar) {
+    progressBar.style.width = scrollPercent + "%";
   }
 
   // Déplacement au clique
@@ -134,7 +53,7 @@ window.addEventListener("scroll", () => {
   });
 
   linkCourse.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.18;
+    const aboutScroll = scrollHeight * 0.24;
     window.scrollTo({
       top: aboutScroll,
       behavior: "smooth",
@@ -150,7 +69,7 @@ window.addEventListener("scroll", () => {
   });
 
   linkInteret.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.7;
+    const aboutScroll = scrollHeight * 0.74;
     window.scrollTo({
       top: aboutScroll,
       behavior: "smooth",
@@ -202,4 +121,27 @@ window.addEventListener("scroll", () => {
   } else {
     linkContact.classList.remove("active");
   }
+});
+
+// Apparition au scroll
+
+window.addEventListener("scroll", () => {
+  const revealsLeft = document.querySelectorAll(".reveal-left");
+  const revealsRight = document.querySelectorAll(".reveal-right");
+
+  revealsLeft.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+
+    if (rect.top < window.innerHeight * 0.7) {
+      el.classList.add("visible");
+    }
+  });
+
+  revealsRight.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+
+    if (rect.top < window.innerHeight * 0.7) {
+      el.classList.add("visible");
+    }
+  });
 });

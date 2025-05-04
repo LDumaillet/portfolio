@@ -93,12 +93,6 @@ section {
       margin: 10vh 5vw 0 5vw;
     }
 
-    #about {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
-    }
-
     h6 {
       font-size: 2.4rem;
       margin-bottom: 10px;
@@ -116,12 +110,6 @@ section {
 
     @media screen and (max-width: 700px) {
       margin: 10vh 0 0 0;
-    }
-
-    #course {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
     }
 
     h2 {
@@ -292,24 +280,6 @@ section {
     .date:first-of-type {
       top: 0;
     }
-
-    #first-item,
-    #third-item,
-    #fifth-item,
-    #seventh-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
-    }
-
-    #second-item,
-    #fourth-item,
-    #sixth-item,
-    #eighth-item {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(200px);
-    }
   }
 
   .portfolio {
@@ -317,11 +287,6 @@ section {
       margin-left: 5vw;
     }
 
-    #portfolio {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
-    }
     .example {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -341,29 +306,21 @@ section {
         background-color: $fifthColor;
         padding: 10px;
         border-radius: 20px;
-        transition: transform 0.3s ease-in;
+        transition: opacity 0.3s ease-in transform 0.3s ease-in;
 
         &:hover {
           transform: scale(1.03);
         }
 
-        &:hover img {
-          opacity: 1;
+        img {
+          &:hover {
+            opacity: 1;
+          }
+
+          @media screen and (max-width: 700px) {
+            opacity: 1;
+          }
         }
-      }
-
-      .model,
-      .api {
-        opacity: 0;
-        transition: 1s ease;
-        transform: translateX(-200px);
-      }
-
-      .gaming-campus,
-      .arcadia {
-        opacity: 0;
-        transition: 1s ease;
-        transform: translateX(200px);
       }
 
       h3 {
@@ -423,12 +380,6 @@ section {
 
     @media screen and (max-width: 1100px) {
       margin-left: 5vw;
-    }
-
-    #center-of-interet {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
     }
 
     h2 {
@@ -513,12 +464,6 @@ section {
     }
     h2 {
       margin-top: 10vh;
-    }
-
-    #contact {
-      opacity: 0;
-      transition: 1s ease;
-      transform: translateX(-200px);
     }
 
     .form {
@@ -606,6 +551,24 @@ section {
     }
   }
 
+  .reveal-left {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 1s ease;
+    transform: translateX(-200px);
+  }
+
+  .reveal-right {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 1s ease;
+    transform: translateX(200px);
+  }
+
+  .reveal-left.visible,
+  .reveal-right.visible {
+    opacity: 1;
+    transform: none;
+  }
+
   @media screen and (max-width: 700px) {
     #second-item,
     #fourth-item,
@@ -619,7 +582,8 @@ section {
     .gaming-campus,
     .api,
     .arcadia {
-      transform: none !important;
+      transition: opacity 0.3s ease-in;
+      transform: none;
     }
   }
 }
