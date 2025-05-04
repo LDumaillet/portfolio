@@ -11,7 +11,7 @@ require_once "mailer/phpmailer.php"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="shortcut icon" alt="logo-cv" href="./pictures/cv_1.png" />
+  <link rel="shortcut icon" alt="logo-cv" href="pictures/logo.png" />
   <script src="script/active.js" defer></script>
   <script src="script/progress.js" defer></script>
   <title>CV Lucas DUMAILLET</title>
