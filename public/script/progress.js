@@ -22,67 +22,69 @@ const linkInteret = document.getElementById("link-interet");
 const contact = document.getElementById("contact");
 const linkContact = document.getElementById("link-contact");
 
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+// Déplacement au clique
+
+linkIndex.addEventListener("click", () => {
+  const aboutScroll = scrollHeight * 0;
+  window.scrollTo({
+    top: aboutScroll,
+    behavior: "smooth",
+  });
+});
+
+linkAbout.addEventListener("click", () => {
+  const aboutScroll = scrollHeight * 0.1;
+  window.scrollTo({
+    top: aboutScroll,
+    behavior: "smooth",
+  });
+});
+
+linkCourse.addEventListener("click", () => {
+  const aboutScroll = scrollHeight * 0.24;
+  window.scrollTo({
+    top: aboutScroll,
+    behavior: "smooth",
+  });
+});
+
+linkPortfolio.addEventListener("click", () => {
+  const aboutScroll = scrollHeight * 0.5;
+  window.scrollTo({
+    top: aboutScroll,
+    behavior: "smooth",
+  });
+});
+
+linkInteret.addEventListener("click", () => {
+  const aboutScroll = scrollHeight * 0.74;
+  window.scrollTo({
+    top: aboutScroll,
+    behavior: "smooth",
+  });
+});
+
+linkContact.addEventListener("click", () => {
+  const aboutScroll = scrollHeight * 0.9;
+  window.scrollTo({
+    top: aboutScroll,
+    behavior: "smooth",
+  });
+});
+
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollHeight =
     document.documentElement.scrollHeight - window.innerHeight;
-
   const scrollPercent = (scrollTop / scrollHeight) * 100;
 
   const progressBar = document.getElementById("progress-bar");
   if (progressBar) {
     progressBar.style.width = scrollPercent + "%";
   }
-
-  // Déplacement au clique
-
-  linkIndex.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0;
-    window.scrollTo({
-      top: aboutScroll,
-      behavior: "smooth",
-    });
-  });
-
-  linkAbout.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.1;
-    window.scrollTo({
-      top: aboutScroll,
-      behavior: "smooth",
-    });
-  });
-
-  linkCourse.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.24;
-    window.scrollTo({
-      top: aboutScroll,
-      behavior: "smooth",
-    });
-  });
-
-  linkPortfolio.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.5;
-    window.scrollTo({
-      top: aboutScroll,
-      behavior: "smooth",
-    });
-  });
-
-  linkInteret.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.74;
-    window.scrollTo({
-      top: aboutScroll,
-      behavior: "smooth",
-    });
-  });
-
-  linkContact.addEventListener("click", () => {
-    const aboutScroll = scrollHeight * 0.9;
-    window.scrollTo({
-      top: aboutScroll,
-      behavior: "smooth",
-    });
-  });
 
   // Hover sur la barre de navigation
 
