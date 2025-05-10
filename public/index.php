@@ -14,7 +14,7 @@ require_once "mailer/phpmailer.php"
   <link rel="shortcut icon" alt="logo-cv" href="pictures/logo.png" />
   <script src="script/active.js" defer></script>
   <script src="script/progress.js" defer></script>
-  <title>CV Lucas DUMAILLET</title>
+  <title>Portfolio de Lucas DUMAILLET</title>
 </head>
 
 <body>
@@ -61,8 +61,25 @@ require_once "mailer/phpmailer.php"
           mes pages plus interactives et dynamiques en interagissant avec mes bases de données.
 
           Toujours en quête de nouveau défi et prouver mes compétences.
-
         </p>
+
+        <div class="header-skill">
+          <h6>Mes compétences</h6>
+          <div class="skill">
+            <img src="pictures/trello.svg" alt="logo-trello">
+            <img src="pictures/figma.svg" alt="logo-figma">
+            <img src="pictures/html.svg" alt="logo-html">
+            <img src="pictures/css.svg" alt="logo-css">
+            <img src="pictures/bootstrap.svg" alt="logo-bootstrap">
+            <img src="pictures/javascript.svg" alt="logo-javascript">
+            <img src="pictures/docker.svg" alt="logo-docker">
+            <img src="pictures/php.svg" alt="logo-php">
+            <img src="pictures/mariadb.svg" alt="logo-mariadb">
+            <img src="pictures/mongodb.svg" alt="logo-mongodb">
+            <img src="pictures/github.svg" alt="logo-github">
+            <img src="pictures/wordpress.svg" alt="logo-wordpress">
+          </div>
+        </div>
       </div>
 
       <div class="course flux-right">
