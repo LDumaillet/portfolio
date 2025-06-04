@@ -77,6 +77,7 @@ require_once "mailer/phpmailer.php"
             <img src="pictures/mariadb.svg" alt="logo-mariadb">
             <img src="pictures/mongodb.svg" alt="logo-mongodb">
             <img src="pictures/github.svg" alt="logo-github">
+            <img src="pictures/git.svg" alt="logo-git">
             <img src="pictures/wordpress.svg" alt="logo-wordpress">
           </div>
         </div>
@@ -185,6 +186,16 @@ require_once "mailer/phpmailer.php"
               <p>PHP</p>
               <p>MariaDB</p>
               <p>MongoDB</p>
+            </div>
+          </div>
+          <div class="api reveal-left">
+            <h3>To-do List</h3>
+            <img src="./pictures/todo.png" alt="to-do list">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
             </div>
           </div>
         </div>
