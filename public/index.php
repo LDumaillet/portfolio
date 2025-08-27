@@ -40,7 +40,7 @@ require_once "mailer/phpmailer.php";
       <div class="welcome">
         <div class="presentation">
           <div class="background-wrapper">
-            <img src="pictures/background.svg" alt="" class="background" loading="lazy">
+            <img src="pictures/background.svg" alt="" class="background">
           </div>
           <div class="text">
             <h1>Lucas DUMAILLET</h1>
