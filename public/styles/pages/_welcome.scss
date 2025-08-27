@@ -29,7 +29,7 @@ section {
 
       @media screen and (max-width: 700px) {
         width: 90%;
-        height: 90%;
+        height: 100%;
       }
 
       .background {
@@ -76,6 +76,7 @@ section {
       h3 {
         font-size: 5rem;
         text-shadow: 3px 3px rgba(53, 0, 211, 1);
+        text-align: center;
 
         @media screen and (max-width: 1100px) {
           font-size: 3.5rem;
