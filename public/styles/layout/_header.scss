@@ -73,6 +73,7 @@
       text-orientation: mixed;
       width: 7.5vw;
       cursor: pointer;
+      overflow: hidden;
       font-size: 1.6rem;
       transition: 0.5s;
       transition-timing-function: ease-out;
@@ -132,6 +133,8 @@
         }
         @media screen and (max-width: 700px) {
           padding: 0 1vw;
+          width: 25px;
+          height: 25px;
 
           &:hover {
             transform: translate(5px, 0);
@@ -144,8 +147,8 @@
 
         @media screen and (max-width: 700px) {
           display: block;
-          height: 40px;
-          width: 40px;
+          height: 30px;
+          width: 30px;
         }
       }
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once "mailer/phpmailer.php"
+require_once "mailer/phpmailer.php";
 
 ?>
 
@@ -10,11 +10,12 @@ require_once "mailer/phpmailer.php"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Lucas Dumaillet, développeur web full stack passionné spécialisé en JavaScript (Angular) et PHP (Symfony), mon parcours, mes projets et comment me contacter.">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="shortcut icon" alt="logo-cv" href="pictures/logo.png" />
   <script src="script/active.js" defer></script>
   <script src="script/progress.js" defer></script>
-  <title>Portfolio de Lucas DUMAILLET</title>
+  <title>Portfolio Lucas DUMAILLET | Développeur web full stack</title>
 </head>
 
 <body>
@@ -22,7 +23,7 @@ require_once "mailer/phpmailer.php"
   <header>
     <nav class="navbar">
       <ul>
-        <li id="link-index"><img src="pictures/logo.png" alt="logo Lucas DUMAILLET"></li>
+        <li id="link-index"><img src="pictures/logo.png" alt="Logo Lucas DUMAILLET Développeur Web Full Stack"></li>
         <li id="link-about">A propos</li>
         <li id="link-course">Parcours</li>
         <li id="link-portfolio">Portfolio</li>
@@ -38,9 +39,15 @@ require_once "mailer/phpmailer.php"
 
       <div class="welcome">
         <div class="presentation">
-          <h1>Lucas DUMAILLET</h1>
-          <h3>Développeur web et web mobile</h3>
+          <div class="background-wrapper">
+            <img src="pictures/background.svg" alt="" class="background" loading="lazy">
+          </div>
+          <div class="text">
+            <h1>Lucas DUMAILLET</h1>
+            <h3>Développeur Web Full Stack</h3>
+          </div>
         </div>
+
       </div>
 
       <div class="about flux-right">
@@ -72,8 +79,10 @@ require_once "mailer/phpmailer.php"
             <img src="pictures/css.svg" alt="logo-css">
             <img src="pictures/bootstrap.svg" alt="logo-bootstrap">
             <img src="pictures/javascript.svg" alt="logo-javascript">
+            <img src="pictures/angular.svg" alt="logo-angular">
             <img src="pictures/docker.svg" alt="logo-docker">
             <img src="pictures/php.svg" alt="logo-php">
+            <img src="pictures/symfony.svg" alt="logo-symfony">
             <img src="pictures/mariadb.svg" alt="logo-mariadb">
             <img src="pictures/mongodb.svg" alt="logo-mongodb">
             <img src="pictures/github.svg" alt="logo-github">
@@ -142,6 +151,13 @@ require_once "mailer/phpmailer.php"
               <p>Studi - Ecole en ligne</p>
             </div>
           </div>
+          <div class="timeline-item left reveal-left" id="seventh-item">
+            <div class="content">
+              <h3>Développeur Full Stack</h3>
+              <p>JeVeuxAider.com - Stream Team</p>
+              <p class="italic">Août 2025 à aujourd'hui</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -150,7 +166,7 @@ require_once "mailer/phpmailer.php"
         <div class="example">
           <div class="model reveal-left">
             <h3>Maquette avec Figma</h3>
-            <img src="./pictures/maquette.png" alt="Maquette Figma">
+            <img src="./pictures/maquette.png" alt="Maquette Figma" loading="lazy">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>Figma</p>
@@ -158,7 +174,7 @@ require_once "mailer/phpmailer.php"
           </div>
           <div class="gaming-campus reveal-right">
             <h3>Reproduction du gaming campus</h3>
-            <img src="./pictures/gaming_campus.png" alt="Site du gaming campus reproduit">
+            <img src="./pictures/gaming_campus.png" alt="Site du gaming campus reproduit" loading="lazy">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -167,7 +183,7 @@ require_once "mailer/phpmailer.php"
           </div>
           <div class="api reveal-left">
             <h3>Extraction API de pays</h3>
-            <img src="./pictures/api_pays.png" alt="API Pays">
+            <img src="./pictures/api_pays.png" alt="Extraction API Pays avec Javascript" loading="lazy">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -177,7 +193,7 @@ require_once "mailer/phpmailer.php"
           </div>
           <div class="arcadia reveal-right">
             <h3>Site du Zoo Arcadia</h3>
-            <img src="./pictures/zoo_arcadia.png" alt="Accueil du zoo arcadia">
+            <img src="./pictures/zoo_arcadia.png" alt="Accueil du zoo arcadia" loading="lazy">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -190,7 +206,7 @@ require_once "mailer/phpmailer.php"
           </div>
           <div class="api reveal-left">
             <h3>To-do List</h3>
-            <img src="./pictures/todo.png" alt="to-do list">
+            <img src="./pictures/todo.png" alt="to-do list" loading="lazy">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -248,20 +264,20 @@ require_once "mailer/phpmailer.php"
     <footer class="flux-right">
       <div class="logo">
         <a href="https://www.linkedin.com/in/lucas-dumaillet-3558a235b" class="tooltip-container">
-          <img src="pictures/linkedin.svg" alt="logo-linkedin">
+          <img src="pictures/linkedin.svg" alt="logo-linkedin" loading="lazy">
           <span class="tooltip">Accéder à mon LinkedIn</span>
         </a>
-        <a href="file/CV_Lucas_DUMAILLET.pdf" class="tooltip-container">
-          <img src="pictures/profile.svg" alt="logo-profil">
+        <a href="file/CV_Lucas_DUMAILLET_Dev.pdf" class="tooltip-container">
+          <img src="pictures/profile.svg" alt="logo-profil" loading="lazy">
           <span class="tooltip tooltip-cv">Télécharger mon CV</span>
         </a>
         <a href="mailto:dumaillet.lucas@gmail.com" class="tooltip-container">
-          <img src="pictures/mail.svg" alt="logo-email">
+          <img src="pictures/mail.svg" alt="logo-email" loading="lazy">
           <span class="tooltip">Envoyer un email</span>
         </a>
       </div>
       <div class="copyright">
-        <p><img src="pictures/copyright.svg" alt="copyright"> | Lucas DUMAILLET | Développeur web et web mobile</p>
+        <p><img src="pictures/copyright.svg" alt="copyright" loading="lazy"> | Lucas DUMAILLET | Développeur web et web mobile</p>
       </div>
     </footer>
   </main>
