@@ -50,7 +50,7 @@ section {
       height: 100%;
       overflow: hidden;
 
-      ::before {
+      &::before {
         content: none !important;
       }
 

@@ -371,7 +371,7 @@ section .welcome .presentation {
   height: 100%;
   overflow: hidden;
 }
-section .welcome .presentation ::before {
+section .welcome .presentation::before {
   content: none !important;
 }
 section .welcome .presentation h1 {
