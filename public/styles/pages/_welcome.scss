@@ -50,6 +50,10 @@ section {
       height: 100%;
       overflow: hidden;
 
+      ::before {
+        content: none !important;
+      }
+
       h1 {
         font-size: 9rem;
         font-weight: bold;

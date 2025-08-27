@@ -371,6 +371,9 @@ section .welcome .presentation {
   height: 100%;
   overflow: hidden;
 }
+section .welcome .presentation ::before {
+  content: none !important;
+}
 section .welcome .presentation h1 {
   font-size: 9rem;
   font-weight: bold;
