@@ -40,7 +40,7 @@ require_once "mailer/phpmailer.php";
       <div class="welcome">
         <div class="presentation">
           <div class="background-wrapper">
-            <img src="pictures/background.svg" alt="" class="background">
+            <img src="pictures/background.svg" alt="" class="background" loading="lazy">
           </div>
           <div class="text">
             <h1>Lucas DUMAILLET</h1>
@@ -267,7 +267,7 @@ require_once "mailer/phpmailer.php";
           <img src="pictures/linkedin.svg" alt="logo-linkedin" loading="lazy">
           <span class="tooltip">Accéder à mon LinkedIn</span>
         </a>
-        <a href="file/CV_Lucas_DUMAILLET_Dev.pdf" class="tooltip-container">
+        <a href="file/CV_Lucas_Dumaillet.pdf" class="tooltip-container">
           <img src="pictures/profile.svg" alt="logo-profil" loading="lazy">
           <span class="tooltip tooltip-cv">Télécharger mon CV</span>
         </a>
