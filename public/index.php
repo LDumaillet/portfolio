@@ -15,6 +15,7 @@ require_once "mailer/phpmailer.php";
   <link rel="shortcut icon" alt="logo-cv" href="pictures/logo.png" />
   <script src="script/active.js" defer></script>
   <script src="script/progress.js" defer></script>
+  <script src="script/carousel.js" defer></script>
   <title>Portfolio Lucas DUMAILLET | Développeur web full stack</title>
 </head>
 
@@ -57,8 +58,7 @@ require_once "mailer/phpmailer.php";
         <p>En reconversion professionnelle en tant que développeur web, j’ai d’abord acquis des compétences en HTML, CSS
           et JavaScript de manière autodidacte. Désireux d’approfondir mes connaissances et d’obtenir un diplôme
           reconnu,
-          j’ai ensuite suivi une formation diplômante de niveau Bac +2 avec STUDI pour devenir Développeur Web et Web
-          Mobile. Cette formation m’a permis d’explorer des concepts essentiels tels que les bases de données
+          j’ai ensuite suivi une formation diplômante de niveau Bac +2 avec STUDI pour devenir Développeur Web Full Stack. Cette formation m’a permis d’explorer des concepts essentiels tels que les bases de données
           relationnelles et non relationnelles, ainsi que l’utilisation d’un gestionnaire de tâches. J’y ai également
           appris à concevoir des maquettes, à maîtriser les principaux termes techniques du développement web et à
           comprendre l’importance de Git et de GitHub dans le processus de collaboration et de gestion de version. Afin
@@ -166,7 +166,12 @@ require_once "mailer/phpmailer.php";
         <div class="example">
           <div class="model reveal-left">
             <h3>Maquette avec Figma</h3>
-            <img src="./pictures/maquette.png" alt="Maquette Figma" loading="lazy">
+            <img src="./pictures/maquette/miniature.png"
+              alt="Maquette Figma"
+              class="preview"
+              loading="lazy"
+              data-gallery="figma"
+              data-index="0">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>Figma</p>
@@ -174,7 +179,12 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="gaming-campus reveal-right">
             <h3>Reproduction du gaming campus</h3>
-            <img src="./pictures/gaming_campus.png" alt="Site du gaming campus reproduit" loading="lazy">
+            <img src="./pictures/gaming_campus/miniature.png"
+              alt="Gaming Campus"
+              class="preview"
+              loading="lazy"
+              data-gallery="campus"
+              data-index="0">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -183,7 +193,12 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="api reveal-left">
             <h3>Extraction API de pays</h3>
-            <img src="./pictures/api_pays.png" alt="Extraction API Pays avec Javascript" loading="lazy">
+            <img src="./pictures/api_pays/miniature.png"
+              alt="API Pays"
+              class="preview"
+              loading="lazy"
+              data-gallery="api"
+              data-index="0">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -193,7 +208,12 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="arcadia reveal-right">
             <h3>Site du Zoo Arcadia</h3>
-            <img src="./pictures/zoo_arcadia.png" alt="Accueil du zoo arcadia" loading="lazy">
+            <img src="./pictures/zoo_arcadia/miniature.png"
+              alt="Zoo Arcadia"
+              class="preview"
+              loading="lazy"
+              data-gallery="arcadia"
+              data-index="0">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -204,9 +224,14 @@ require_once "mailer/phpmailer.php";
               <p>MongoDB</p>
             </div>
           </div>
-          <div class="api reveal-left">
+          <div class="todo reveal-left">
             <h3>To-do List</h3>
-            <img src="./pictures/todo.png" alt="to-do list" loading="lazy">
+            <img src="./pictures/todo/home.png"
+              alt="To-do List"
+              class="preview"
+              loading="lazy"
+              data-gallery="todo"
+              data-index="0">
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
@@ -214,7 +239,30 @@ require_once "mailer/phpmailer.php";
               <p>Javascript</p>
             </div>
           </div>
+          <div class="crypto reveal-right">
+            <h3>Suivi Crypto</h3>
+            <img src="./pictures/crypto/miniature.png"
+              alt="Crypto suivi"
+              class="preview"
+              loading="lazy"
+              data-gallery="crypto"
+              data-index="0">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>Angular</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div id="carouselModal" class="modal">
+        <img src="./pictures/close.png" alt="Fermer" class="close">
+        <img src="./pictures/arrow-right.png" alt="Suivant" class="next">
+        <img src="./pictures/arrow-left.png" alt="Précedent" class="prev">
+        <img class="carousel-image" id="carouselImage" src="" alt="">
       </div>
 
       <div class="center-of-interet flux-right">
