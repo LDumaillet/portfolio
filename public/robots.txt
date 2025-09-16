@@ -1,0 +1,6 @@
+# Autoriser tous les robots à explorer le site
+User-agent: *
+Allow: /
+
+# Indiquer l'emplacement du sitemap (si tu en crées un)
+Sitemap: https://portfolio-lucas-dumaillet-bc5d34c772d6.herokuapp.com/sitemap.xml
