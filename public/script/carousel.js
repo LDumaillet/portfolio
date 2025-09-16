@@ -8,26 +8,26 @@ let currentGallery = "";
 // Listes d’images par projet
 const galleries = {
   figma: [
-    "./pictures/maquette/mockups-desktop.png",
-    "./pictures/maquette/mockups-tablette.jpg",
-    "./pictures/maquette/mockups-smartphone.png",
-    "./pictures/maquette/mockups-smartphone-unfold.png",
+    "./pictures/maquette/mockups-desktop.webp",
+    "./pictures/maquette/mockups-tablette.webp",
+    "./pictures/maquette/mockups-smartphone.webp",
+    "./pictures/maquette/mockups-smartphone-unfold.webp",
   ],
   campus: [
-    "./pictures/gaming_campus/campus_desktop.png",
-    "./pictures/gaming_campus/campus_smartphone.png",
+    "./pictures/gaming_campus/campus_desktop.webp",
+    "./pictures/gaming_campus/campus_smartphone.webp",
   ],
-  api: ["./pictures/api_pays/home.png", "./pictures/api_pays/search.png"],
+  api: ["./pictures/api_pays/home.webp", "./pictures/api_pays/search.webp"],
   arcadia: [
-    "./pictures/zoo_arcadia/home.png",
-    "./pictures/zoo_arcadia/habitat.png",
-    "./pictures/zoo_arcadia/animal.png",
-    "./pictures/zoo_arcadia/services.png",
-    "./pictures/zoo_arcadia/admin.png",
-    "./pictures/zoo_arcadia/refused.png",
+    "./pictures/zoo_arcadia/home.webp",
+    "./pictures/zoo_arcadia/habitat.webp",
+    "./pictures/zoo_arcadia/animal.webp",
+    "./pictures/zoo_arcadia/services.webp",
+    "./pictures/zoo_arcadia/admin.webp",
+    "./pictures/zoo_arcadia/refused.webp",
   ],
-  todo: ["./pictures/todo/home.png"],
-  crypto: ["./pictures/crypto/home.png", "./pictures/crypto/bitcoin.png"],
+  todo: ["./pictures/todo/home.webp"],
+  crypto: ["./pictures/crypto/home.webp", "./pictures/crypto/bitcoin.webp"],
 };
 
 // Ouvrir le carrousel

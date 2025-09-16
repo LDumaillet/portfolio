@@ -846,7 +846,7 @@ section .center-of-interet h6 {
   font-size: 4rem;
 }
 section .center-of-interet .car {
-  background: url(../pictures/car.jpg) no-repeat;
+  background: url(../pictures/car.webp) no-repeat;
   background-size: cover;
   background-position-y: 30%;
   opacity: 20;
@@ -856,7 +856,7 @@ section .center-of-interet .car:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .techno {
-  background: url(../pictures/techno.jpg) no-repeat;
+  background: url(../pictures/techno.webp) no-repeat;
   background-size: cover;
   background-position-y: 60%;
   transition: transform 0.5s ease;
@@ -865,7 +865,7 @@ section .center-of-interet .techno:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .read {
-  background: url(../pictures/read.jpg) no-repeat;
+  background: url(../pictures/read.webp) no-repeat;
   background-size: cover;
   background-position-y: 60%;
   transition: transform 0.5s ease;
@@ -874,7 +874,7 @@ section .center-of-interet .read:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .music {
-  background: url(../pictures/music.jpg) no-repeat;
+  background: url(../pictures/music.webp) no-repeat;
   background-size: cover;
   background-position-y: 60%;
   transition: transform 0.5s ease;
@@ -883,7 +883,7 @@ section .center-of-interet .music:hover {
   transform: scale(1.05);
 }
 section .center-of-interet .basket {
-  background: url(../pictures/basket.jpg) no-repeat;
+  background: url(../pictures/basket.webp) no-repeat;
   background-size: cover;
   background-position-y: 70%;
   transition: transform 0.5s ease;

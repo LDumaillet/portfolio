@@ -166,7 +166,7 @@ require_once "mailer/phpmailer.php";
         <div class="example">
           <div class="model reveal-left">
             <h3>Maquette avec Figma</h3>
-            <img src="./pictures/maquette/miniature.png"
+            <img src="./pictures/maquette/miniature.webp"
               alt="Maquette Figma"
               class="preview"
               loading="lazy"
@@ -179,7 +179,7 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="gaming-campus reveal-right">
             <h3>Reproduction du gaming campus</h3>
-            <img src="./pictures/gaming_campus/miniature.png"
+            <img src="./pictures/gaming_campus/miniature.webp"
               alt="Gaming Campus"
               class="preview"
               loading="lazy"
@@ -193,7 +193,7 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="api reveal-left">
             <h3>Extraction API de pays</h3>
-            <img src="./pictures/api_pays/miniature.png"
+            <img src="./pictures/api_pays/miniature.webp"
               alt="API Pays"
               class="preview"
               loading="lazy"
@@ -208,7 +208,7 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="arcadia reveal-right">
             <h3>Site du Zoo Arcadia</h3>
-            <img src="./pictures/zoo_arcadia/miniature.png"
+            <img src="./pictures/zoo_arcadia/miniature.webp"
               alt="Zoo Arcadia"
               class="preview"
               loading="lazy"
@@ -226,7 +226,7 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="todo reveal-left">
             <h3>To-do List</h3>
-            <img src="./pictures/todo/home.png"
+            <img src="./pictures/todo/home.webp"
               alt="To-do List"
               class="preview"
               loading="lazy"
@@ -241,7 +241,7 @@ require_once "mailer/phpmailer.php";
           </div>
           <div class="crypto reveal-right">
             <h3>Suivi Crypto</h3>
-            <img src="./pictures/crypto/miniature.png"
+            <img src="./pictures/crypto/miniature.webp"
               alt="Crypto suivi"
               class="preview"
               loading="lazy"
