@@ -250,9 +250,27 @@ require_once "mailer/phpmailer.php";
             <div class="not-display">
               <h6>Technologie</h6>
               <p>HTML</p>
-              <p>CSS</p>
+              <p>SCSS</p>
               <p>JavaScript</p>
               <p>Angular</p>
+              <p>API</p>
+            </div>
+          </div>
+          <div class="library reveal-left">
+            <h3>Librairie</h3>
+            <img src="./pictures/library/library.webp"
+              alt="librairie"
+              class="preview"
+              loading="lazy"
+              data-gallery="library"
+              data-index="0">
+            <div class="not-display">
+              <h6>Technologie</h6>
+              <p>HTML</p>
+              <p>SCSS</p>
+              <p>JavaScript</p>
+              <p>Angular</p>
+              <p>JSON</p>
             </div>
           </div>
         </div>

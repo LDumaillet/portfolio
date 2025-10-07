@@ -28,6 +28,11 @@ const galleries = {
   ],
   todo: ["./pictures/todo/home.webp"],
   crypto: ["./pictures/crypto/home.webp", "./pictures/crypto/bitcoin.webp"],
+  library: [
+    "./pictures/library/summary.webp",
+    "./pictures/library/detail_book.webp",
+    "./pictures/library/library.webp",
+  ],
 };
 
 // Ouvrir le carrousel
