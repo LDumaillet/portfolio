@@ -22,6 +22,10 @@ const linkInteret = document.getElementById("link-interet");
 const contact = document.getElementById("contact");
 const linkContact = document.getElementById("link-contact");
 
+console.log(getComputedStyle(document.querySelector(".navbar ul")).zIndex);
+console.log(getComputedStyle(document.getElementById("carouselModal")).zIndex);
+console.log(getComputedStyle(document.body).position);
+
 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
 

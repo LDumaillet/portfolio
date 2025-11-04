@@ -350,7 +350,8 @@ section {
       .todo,
       .arcadia,
       .crypto,
-      .library {
+      .library,
+      .stream-team {
         width: 95%;
         background-color: $fifthColor;
         padding: 10px;
@@ -358,7 +359,9 @@ section {
         transition: opacity 0.3s ease-in transform 0.3s ease-in;
 
         &:hover {
-          transform: scale(1.03);
+          transform: scale(1.05);
+          border: 2px solid $primaryColor;
+          box-shadow: 0px 0px 20px 5px $primaryColor;
         }
 
         img {

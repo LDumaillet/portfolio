@@ -273,6 +273,26 @@ require_once "mailer/phpmailer.php";
               <p>JSON</p>
             </div>
           </div>
+          <div class="stream-team reveal-right">
+            <a href="https://www.stream-team.site/" class="external-link" data-site-name="Stream-Team">
+              <h3>Stream-Team</h3>
+              <img src="./pictures/stream_team/stream_team.webp"
+                alt="stream-team"
+                class="preview"
+                loading="lazy"
+                data-gallery="stream_team"
+                data-index="0">
+              <div class="not-display">
+                <h6>Technologie</h6>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Node.JS</p>
+                <p>Express</p>
+                <p>SQL</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -325,19 +345,31 @@ require_once "mailer/phpmailer.php";
       </div>
     </section>
 
+    <!-- Modale de confirmation -->
+    <div id="redirectModal" class="modal-overlay">
+      <div class="modal-content">
+        <h3>Redirection</h3>
+        <p id="modalMessage"></p>
+        <div class="modal-buttons">
+          <button id="cancelBtn" class="btn-cancel">Annuler</button>
+          <button id="confirmBtn" class="btn-confirm">Continuer</button>
+        </div>
+      </div>
+    </div>
+
     <hr class="flux-right">
 
     <footer class="flux-right">
       <div class="logo">
-        <a href="https://www.linkedin.com/in/lucas-dumaillet-3558a235b" class="tooltip-container">
+        <a href="https://www.linkedin.com/in/lucas-dumaillet-3558a235b" class="tooltip-container external-link" data-site-name="LinkedIn">
           <img src="pictures/linkedin.svg" alt="logo-linkedin" loading="lazy">
           <span class="tooltip">Accéder à mon LinkedIn</span>
         </a>
-        <a href="file/CV_Lucas_Dumaillet.pdf" class="tooltip-container">
+        <a href="file/CV_Lucas_Dumaillet.pdf" class="tooltip-container external-link" data-site-name="le Curriculum Vitae de Lucas DUMAILLET">
           <img src="pictures/profile.svg" alt="logo-profil" loading="lazy">
           <span class="tooltip tooltip-cv">Télécharger mon CV</span>
         </a>
-        <a href="mailto:dumaillet.lucas@gmail.com" class="tooltip-container">
+        <a href="mailto:dumaillet.lucas@gmail.com" class="tooltip-container external-link" data-site-name="votre boite email">
           <img src="pictures/mail.svg" alt="logo-email" loading="lazy">
           <span class="tooltip">Envoyer un email</span>
         </a>
