@@ -689,18 +689,8 @@ section {
   }
 
   @media screen and (max-width: 700px) {
-    #second-item,
-    #fourth-item,
-    #sixth-item,
-    #eighth-item,
-    #first-item,
-    #third-item,
-    #fifth-item,
-    #seventh-item,
-    .model,
-    .gaming-campus,
-    .api,
-    .arcadia {
+    .reveal-left,
+    .reveal-right {
       transition: opacity 0.3s ease-in;
       transform: none;
     }

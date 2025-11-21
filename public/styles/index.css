@@ -1004,18 +1004,8 @@ section .reveal-right.visible {
   transform: none;
 }
 @media screen and (max-width: 700px) {
-  section #second-item,
-  section #fourth-item,
-  section #sixth-item,
-  section #eighth-item,
-  section #first-item,
-  section #third-item,
-  section #fifth-item,
-  section #seventh-item,
-  section .model,
-  section .gaming-campus,
-  section .api,
-  section .arcadia {
+  section .reveal-left,
+  section .reveal-right {
     transition: opacity 0.3s ease-in;
     transform: none;
   }
